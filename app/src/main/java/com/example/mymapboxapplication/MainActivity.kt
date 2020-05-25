@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Mapbox.getInstance(this, "pk.---your kery---");
+        Mapbox.getInstance(this, "---Input your key---");
         Mapbox.setConnected(true);
         setContentView(R.layout.activity_main)
         mapView = findViewById(R.id.mapView)
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 } catch (e: MBTilesSourceError.CouldNotReadFileError) {
                     Log.e("-----", "Database Read Error", e)
                 }
-                //mapboxMap.setStyleUrl("asset://style-bright.json")
+                mapboxMap.setStyle(Style.Builder().fromUri("asset://style-bright.json"));
             }
         }
     }
