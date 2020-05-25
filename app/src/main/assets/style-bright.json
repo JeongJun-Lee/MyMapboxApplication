@@ -28,7 +28,7 @@
     }
   },
   "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=InputYourKey",
+  "glyphs": "asset://glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
